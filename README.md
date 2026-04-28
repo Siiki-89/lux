@@ -4,7 +4,6 @@ O **LUX** é um aplicativo mobile desenvolvido em **2023**, com o objetivo de pe
 
 Este projeto foi criado como um experimento de automação doméstica, integrando **hardware e software**, permitindo controlar diferentes lâmpadas diretamente pelo smartphone.
 
----
 
 #  Screenshots
 
@@ -19,7 +18,6 @@ Este projeto foi criado como um experimento de automação doméstica, integrand
   <img src="assets/images/sala.jpg" width="200"/>
 </p>
 
----
 
 #  Funcionalidades
 
@@ -33,7 +31,6 @@ Este projeto foi criado como um experimento de automação doméstica, integrand
 - Adição de novos cômodos
 - Alteração de imagem do cômodo
 
----
 
 #  Ideia do Projeto
 
@@ -49,7 +46,6 @@ O circuito do Arduino e o código embarcado foram desenvolvidos manualmente, per
 - Alterar cor RGB
 - Salvar configurações no Firebase
 
----
 
 #  Tecnologias Utilizadas
 
@@ -59,7 +55,6 @@ O circuito do Arduino e o código embarcado foram desenvolvidos manualmente, per
 - **Arduino**
 - **XML (Interface Android)**
 
----
 
 #  Integração com Hardware
 
@@ -76,7 +71,6 @@ O Arduino era responsável por:
 - Controlar o estado das lâmpadas
 - Ajustar intensidade e cor
 
----
 
 #  Melhorias Planejadas
 
@@ -88,10 +82,14 @@ Algumas ideias futuras para o projeto incluíam:
 - Sincronização avançada com Firebase
 - Suporte a Wi-Fi além de Bluetooth
 
----
 
 # Observações
 
 O protótipo físico do Arduino foi desenvolvido durante o projeto, porém não foi salvo posteriormente.
+Foto do circuito, usei um aplicativo para testar a conexão com o Bluetooth:
+
+<p align="center">
+  <img src="assets/images/arduino.jpg" width="200"/>
+</p>
 
 Mesmo assim, o aplicativo representa a lógica completa de comunicação e controle de iluminação.
