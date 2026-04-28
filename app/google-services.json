@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "946731852712",
+    "project_id": "luxi-b4275",
+    "storage_bucket": "luxi-b4275.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946731852712:android:6a9f9562a60b1821e6339d",
+        "android_client_info": {
+          "package_name": "com.example.lux"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946731852712-l40tcck6hfr4ivvbs2ar1qgn08cn9488.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBE_efcmbQkvH01b7aHSwsIlK2-3omWPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946731852712-l40tcck6hfr4ivvbs2ar1qgn08cn9488.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

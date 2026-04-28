@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormSala">
+
+    <ImageView
+        android:id="@+id/colorPickers"
+        android:layout_width="142dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <View
+        android:id="@+id/viewColor"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorPickers" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Cor"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch2" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="Ativar lâmpada"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Ligado"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toEndOf="@+id/switch2"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="57dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:scaleX="3"
+        android:scaleY="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Desligado"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/switch2"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <ImageView
+        android:id="@+id/imgLaranja"
+        android:layout_width="56dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toStartOf="@+id/imgAzul"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgAmarelo"
+        app:layout_constraintTop_toBottomOf="@+id/viewColor"
+        app:srcCompat="@drawable/claranja" />
+
+    <ImageView
+        android:id="@+id/imgRoxo"
+        android:layout_width="56dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toStartOf="@+id/imgVermelho"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgAzul"
+        app:layout_constraintTop_toBottomOf="@+id/viewColor"
+        app:srcCompat="@drawable/croxo" />
+
+    <ImageView
+        android:id="@+id/imgAzul"
+        android:layout_width="56dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toStartOf="@+id/imgRoxo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgLaranja"
+        app:layout_constraintTop_toBottomOf="@+id/viewColor"
+        app:srcCompat="@drawable/cazul" />
+
+    <ImageView
+        android:id="@+id/imgAmarelo"
+        android:layout_width="56dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toStartOf="@+id/imgLaranja"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewColor"
+        app:srcCompat="@drawable/camarelo" />
+
+    <ImageView
+        android:id="@+id/imgVermelho"
+        android:layout_width="56dp"
+        android:layout_height="47dp"
+        android:scaleType="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgVerde"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgRoxo"
+        app:layout_constraintTop_toBottomOf="@+id/viewColor"
+        app:srcCompat="@drawable/cvermelho" />
+
+    <ImageView
+        android:id="@+id/imgVerde"
+        android:layout_width="56dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgVermelho"
+        app:layout_constraintTop_toBottomOf="@+id/viewColor"
+        app:srcCompat="@drawable/cverde" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormCadastro">
+
+    <View
+        android:id="@+id/viewLogin2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edit_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_button"
+        android:onClick="novoUsuario"
+        android:text="Concluir"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewLogin2"
+        app:layout_constraintEnd_toEndOf="@+id/viewLogin2"
+        app:layout_constraintStart_toStartOf="@+id/viewLogin2"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Usuário:"
+        android:textColor="@color/color_Text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewLogin2"
+        app:layout_constraintEnd_toEndOf="@+id/viewLogin2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/viewLogin2"
+        app:layout_constraintTop_toTopOf="@+id/viewLogin2"
+        app:layout_constraintVertical_bias="0.156" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Senha:"
+        android:textColor="@color/color_Text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/viewLogin2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/viewLogin2"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:hint="Escreva seu e-mail"
+        android:inputType="textWebEmailAddress"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/viewLogin2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/viewLogin2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="E-mail:"
+        android:textColor="@color/color_Text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/viewLogin2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/viewLogin2"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
+
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:hint="Escreva seu usuario..."
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/viewLogin2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/viewLogin2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:hint="Senha"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/viewLogin2"
+        app:layout_constraintStart_toStartOf="@+id/viewLogin2"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:passwordToggleDrawable="@drawable/password_toggle"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/color_Primary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editSenha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text"
+            android:inputType="textPassword"
+            android:textIsSelectable="false"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
